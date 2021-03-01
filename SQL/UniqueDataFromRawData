@@ -1,0 +1,5 @@
+SELECT * FROM
+( 
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY "Column Name" ORDER BY "Column Name") AS "ROWNR"
+    FROM "Table Name"
+ ) AS a WHERE a."ROWNR" = 1

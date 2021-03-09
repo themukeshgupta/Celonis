@@ -1,0 +1,1 @@
+SUM(CASE WHEN "Activity Table"."Activity Column Name" = 'Activity Name' THEN 1 ELSE NULL END)

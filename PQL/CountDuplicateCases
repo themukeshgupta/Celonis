@@ -1,0 +1,1 @@
+COUNT(CASE WHEN PU_COUNT(DOMAIN_TABLE("Table.Column"),"Table.Column") > 1 THEN 1 ELSE NULL END)
